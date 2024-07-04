@@ -67,4 +67,6 @@ def create():
 
 # start the application on port 3111
 if __name__ == "__main__":
+   # x = get_post(2)
+   # print(x['title'])
    app.run(host='0.0.0.0', port='3111')
