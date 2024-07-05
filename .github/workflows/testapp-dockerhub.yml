@@ -19,6 +19,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: "./project"
+          context: ./project
           push: true
           tags: ${{ secrets.DOCKER_UNAME }}/testapp:latest
