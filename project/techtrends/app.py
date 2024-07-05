@@ -74,7 +74,7 @@ def metrics():
     connection = get_db_connection()
     num_posts = connection.execute('SELECT COUNT(*) as count FROM posts').fetchone()
     connection.close()
-    return jsonify({"post_count": num_posts['count']}), 200
+    return jsonify({"post_count_c": num_posts['count']}), 200
 # start the application on port 3111
 if __name__ == "__main__":
    # x = get_post(2)
